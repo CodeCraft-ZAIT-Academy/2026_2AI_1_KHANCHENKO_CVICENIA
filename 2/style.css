@@ -1,0 +1,23 @@
+.header{
+    background-color: gray;
+    ;
+}
+.number{
+    text-align: right;
+    
+}
+table, th, td{
+    border: 1px solid;
+}
+table{
+    background-color: skyblue;
+    border: 0px;
+   
+}
+.hz{
+    background-color: yellow;
+}
+.number1{
+    text-align: right;
+    background-color: red;
+}
