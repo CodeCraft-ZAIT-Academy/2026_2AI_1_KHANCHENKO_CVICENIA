@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+
+    <style>
+        .searchbar {
+            font-size: 20px;
+            margin-left: 12px;
+            margin-bottom: 30px;
+            display: flex;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(3, 400px);
+            gap: 30px;
+        }
+
+        .video {
+            display: grid;
+            grid-template-columns: 40px 1fr 40px;
+            column-gap: 10px;
+        }
+
+        .preview {
+            grid-column: 1 / 4;
+        }
+
+        .thumbnail {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            background-color: white;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        .chanel {
+            grid-column: 1;
+            padding-top: 10px;
+        }
+
+        .kanal {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .opisanie {
+            grid-column: 2;
+        }
+
+        .opisanie p {
+            margin: 8px 0;
+        }
+
+        .opis {
+            color: grey;
+        }
+
+        .right-channel {
+            grid-column: 3;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="left-section" style="display: flex; justify-content: space-between;">
+        <div style="width: 15px;">
+            <img style="width: 40px;" src="jutub.png">
+        </div>
+    
+        <div class="middle-section" style="flex: 1; max-width: 500px; margin-left: 70px; margin-right: 35px;">
+            <input class="searchbar" type="text" placeholder="hladat">
+        </div>
+    
+        <div class="right-section" style="width: 20px;">
+            <img style="width: 40px;" src="profil.jpg">
+        </div>
+    </div>
+    
+
+    <div class="videos">
+
+    
+        <div class="video">
+
+            <div class="preview">
+                <img class="thumbnail" src="sova.png">
+            </div>
+
+            <div class="chanel">
+                <img class="kanal" src="sova.png">
+            </div>
+
+            <div class="opisanie">
+                <p><b>Sova na skakalke</b></p>
+                <p class="opis">Koliaka</p>
+                <p class="opis">10b vievs - 5 month ago</p>
+            </div>
+
+            <div class="right-channel">
+                <img class="kanal" src="images.png">
+            </div>
+
+        </div>
+
+
+        <div class="video">
+
+            <div class="preview">
+                <img class="thumbnail" src="opana.jpg">
+            </div>
+
+            <div class="chanel">
+                <img class="kanal" src="opana.jpg">
+            </div>
+
+            <div class="opisanie">
+                <p><b>Kak mat</b></p>
+                <p class="opis">mcvin</p>
+                <p class="opis">1m vievs - 9 month ago</p>
+            </div>
+
+            <div class="right-channel">
+                <img class="kanal" src="images.png">
+            </div>
+
+        </div>
+
+
+        <div class="video">
+
+            <div class="preview">
+                <img class="thumbnail" src="liza.jpg">
+            </div>
+
+            <div class="chanel">
+                <img class="kanal" src="liza.jpg">
+            </div>
+
+            <div class="opisanie">
+                <p><b>Liza Mona</b></p>
+                <p class="opis">Leonardo dai Vinchik</p>
+                <p class="opis">30000 vievs - 10 years ago</p>
+            </div>
+
+            <div class="right-channel">
+                <img class="kanal" src="images.png">
+            </div>
+
+        </div>
+
+
+        <div class="video">
+
+            <div class="preview">
+                <img class="thumbnail" src="sova.png">
+            </div>
+
+            <div class="chanel">
+                <img class="kanal" src="sova.png">
+            </div>
+
+            <div class="opisanie">
+                <p><b>Video 4</b></p>
+                <p class="opis">Koliaka</p>
+                <p class="opis">500k vievs - 2 month ago</p>
+            </div>
+
+            <div class="right-channel">
+                <img class="kanal" src="images.png">
+            </div>
+
+        </div>
+
+
+        <div class="video">
+
+            <div class="preview">
+                <img class="thumbnail" src="opana.jpg">
+            </div>
+
+            <div class="chanel">
+                <img class="kanal" src="opana.jpg">
+            </div>
+
+            <div class="opisanie">
+                <p><b>Video 5</b></p>
+                <p class="opis">mcvin</p>
+                <p class="opis">200k vievs - 3 month ago</p>
+            </div>
+
+            <div class="right-channel">
+                <img class="kanal" src="images.png">
+            </div>
+
+        </div>
+
+        <div class="video">
+
+            <div class="preview">
+                <img class="thumbnail" src="liza.jpg">
+            </div>
+
+            <div class="chanel">
+                <img class="kanal" src="liza.jpg">
+            </div>
+
+            <div class="opisanie">
+                <p><b>Video 6</b></p>
+                <p class="opis">Leonardo dai Vinchik</p>
+                <p class="opis">100k vievs - 1 year ago</p>
+            </div>
+
+            <div class="right-channel">
+                <img class="kanal" src="images.png">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
