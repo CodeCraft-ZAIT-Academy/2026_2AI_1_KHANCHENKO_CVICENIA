@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,22 @@
             margin-left: 12px;
             margin-bottom: 30px;
             display: flex;
+            margin: 0;
+            width: 100%;
+            max-width: 800px;
+            min-width: 0;
+            flex: 1;
+            box-sizing: border-box;
         }
 
         .videos {
             display: grid;
             grid-template-columns: repeat(3, 400px);
             gap: 30px;
+            margin-top: 30px;
+            margin-left: 100px;
+            position: absolute;
+            top: 50px;
         }
 
         .video {
@@ -27,6 +38,7 @@
 
         .preview {
             grid-column: 1 / 4;
+            position: relative;
         }
 
         .thumbnail {
@@ -68,33 +80,107 @@
             grid-column: 3;
             padding-top: 10px;
         }
+
+        .middle-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            min-width: 0;
+            max-width: 600px;
+            margin: 0 35px;
+        }
+
+        .notification-count {
+            position: absolute;
+            background-color: red;
+            color: white;
+            top: -5px;
+            right: -5px;
+            border-radius: 50px;
+            font-family: Roboto, Arial;
+            font-size: 11;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        .vremia {
+            position: absolute;
+            top: 220px;
+            left: 350px;
+            background-color: black;
+            color: white;
+            font-family: Roboto, Arial;
+            font-size: 12px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 5px;
+
+        }
+        .verch{
+            position: sticky;
+        }
+        .bok{
+            display: flex;
+            flex-direction: column;
+            width: 50px;
+            flex: 1;
+            position: relative;
+        }
     </style>
 </head>
 
 <body>
+    <div class="verch">
 
-    <div class="left-section" style="display: flex; justify-content: space-between;">
-        <div style="width: 15px;">
-            <img style="width: 40px;" src="jutub.png">
-        </div>
-    
-        <div class="middle-section" style="flex: 1; max-width: 500px; margin-left: 70px; margin-right: 35px;">
-            <input class="searchbar" type="text" placeholder="hladat">
-        </div>
-    
-        <div class="right-section" style="width: 20px;">
-            <img style="width: 40px;" src="profil.jpg">
+        <div class="left-section" style="display: flex; justify-content: space-between;">
+            <div style="width: 15px;display: flex;flex-direction: row;column-gap: 20px;">
+                <img style="width: 40px;" src=ham.png>
+                <img style="width: 60px;" src="jutub.png">
+            </div>
+
+            <div class="middle-section"
+                style="display:flex;flex: 1;flex-direction: row; margin-left: 70px; margin-right: 35px;">
+                <input class="searchbar" type="text" placeholder="hladat" style="width: 800px;">
+                <img style="width: 40px;height: 20px;" src=e.png>
+            </div>
+
+            <div class="right-section"
+                style="width: 60px; height: 30px; margin-right: 150px;display: flex;flex-direction: row;column-gap: 20px;">
+                <img style="width: 60px;" src=kamera.png>
+                <img style="width: 60px;" src=tri.png>
+
+                <div style="position: relative;">
+                    <img style="width: 30px;height: 30px;" src=kolo.png>
+                    <div class="notification-count">3</div>
+                </div>
+
+                <img style="width: 60px;" src="profil.jpg">
+            </div>
+
         </div>
     </div>
-    
+
+    <div class="bok" style="width: 50px;">
+        <img src="dom.png">
+        <img src="shorts.png">
+        <img src="podpiska.png">
+        <img src="moje.png">
+    </div>
+
 
     <div class="videos">
 
-    
+
         <div class="video">
 
             <div class="preview">
                 <img class="thumbnail" src="sova.png">
+                <div class="vremia">67:42</div>
             </div>
 
             <div class="chanel">
@@ -118,6 +204,7 @@
 
             <div class="preview">
                 <img class="thumbnail" src="opana.jpg">
+                <div class="vremia">12:52</div>
             </div>
 
             <div class="chanel">
@@ -141,6 +228,7 @@
 
             <div class="preview">
                 <img class="thumbnail" src="liza.jpg">
+                <div class="vremia">69:41</div>
             </div>
 
             <div class="chanel">
@@ -164,6 +252,7 @@
 
             <div class="preview">
                 <img class="thumbnail" src="sova.png">
+                <div class="vremia">7:17</div>
             </div>
 
             <div class="chanel">
@@ -171,9 +260,9 @@
             </div>
 
             <div class="opisanie">
-                <p><b>Video 4</b></p>
-                <p class="opis">Koliaka</p>
-                <p class="opis">500k vievs - 2 month ago</p>
+                <p><b>Chivo</b></p>
+                <p class="opis">VladDiorArmani</p>
+                <p class="opis">50k vievs - 1 month ago</p>
             </div>
 
             <div class="right-channel">
@@ -187,6 +276,7 @@
 
             <div class="preview">
                 <img class="thumbnail" src="opana.jpg">
+                <div class="vremia">42:42</div>
             </div>
 
             <div class="chanel">
@@ -194,7 +284,7 @@
             </div>
 
             <div class="opisanie">
-                <p><b>Video 5</b></p>
+                <p><b>BLIN</b></p>
                 <p class="opis">mcvin</p>
                 <p class="opis">200k vievs - 3 month ago</p>
             </div>
@@ -209,6 +299,7 @@
 
             <div class="preview">
                 <img class="thumbnail" src="liza.jpg">
+                <div class="vremia">52:13</div>
             </div>
 
             <div class="chanel">
@@ -216,7 +307,7 @@
             </div>
 
             <div class="opisanie">
-                <p><b>Video 6</b></p>
+                <p><b>Chert Vozmi</b></p>
                 <p class="opis">Leonardo dai Vinchik</p>
                 <p class="opis">100k vievs - 1 year ago</p>
             </div>
@@ -230,4 +321,5 @@
     </div>
 
 </body>
+
 </html>
